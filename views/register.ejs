@@ -1,0 +1,27 @@
+<style>
+        .box{
+            margin-top: 100px;
+        }
+        .box > input{
+            width: 200px;
+        }
+    </style>
+    
+    <div class="container box">
+        <% include ./partials/msg %>
+        <form action="/user/register" method="post">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="nameofuser" class="form-control" name="nameofuser">
+                <label>Username</label>
+                <input type="text" id="username" class="form-control" name="username">
+                <label>Password</label>
+                <input id="password" type="password" class="form-control" name="password">
+                <label>Confirm Password</label>
+                <input id="conf_password" type="password" class="form-control" name="conf_password">
+                <label>Email</label>
+                <input type="text" id="email" class="form-control" name="email"><br>
+                <input type="submit" class="btn-primary form-control" value="Login">
+            </div>
+        </form>
+    </div>

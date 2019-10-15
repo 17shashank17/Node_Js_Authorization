@@ -1,0 +1,21 @@
+
+<style>
+.box{
+    text-align: center;
+    border: 2px solid gray;
+    position: absolute;
+    margin-top: 30px;
+    border-radius: 4px;
+    padding: 40px;
+}
+.btn{
+    background: white;
+    width: 250px;
+}
+</style>
+
+<div class="container box">
+    <% include ./partials/msg %>
+    <button class="btn btn-success"><a href="/user/login">Login</a></button><br><br>
+    <button class="btn btn-primary"><a href="/user/register">Register</a></button>
+</div>
